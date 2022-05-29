@@ -5,4 +5,5 @@ class baseObjectIdentity {
     step1?: string;
     step2?: string;
     oldStep1?: string;
+    m?:string;
 }
