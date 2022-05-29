@@ -3,4 +3,5 @@ class baseObjectIdentity {
     t1: string | undefined;
     t2: string | undefined;
     step1?: string;
+    step2?: string;
 }
