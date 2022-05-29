@@ -4,4 +4,5 @@ class baseObjectIdentity {
     t2: string | undefined;
     step1?: string;
     step2?: string;
+    oldStep1?: string;
 }
