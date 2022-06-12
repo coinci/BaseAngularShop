@@ -6,4 +6,5 @@ class baseObjectIdentity {
     step2?: string;
     oldStep1?: string;
     m?:string;
+    Option1?:string;
 }
