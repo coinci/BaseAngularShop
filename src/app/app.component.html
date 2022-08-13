@@ -1,17 +1,27 @@
 <h1>Base Angular Shop</h1>
 
-<mat-grid-list cols="12"  rowHeight="800px" >
-  <mat-grid-tile colspan="2">
-    <mat-nav-list>
-      <a mat-list-item routerLink="/home">Home</a>
+<div class="container" >
+  <div class="row">
+    <div class="col-2">
+      <!-- <a mat-list-item routerLink="/home">Home</a>
       <a mat-list-item routerLink="/ngrx">Ngrx</a>
       <a mat-list-item routerLink="/ngclassShop"> NgClass</a>
-    </mat-nav-list>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="10">
+      <a mat-list-item routerLink="/material"> Material SHop</a> -->
+<div class="row">
+      <button mat-raised-button color="accent" class="mb-1" routerLink="/home">Home</button>
+      <button mat-raised-button color="accent" class="mb-1" routerLink="/ngrx">Ngrx</button>
+      <button mat-raised-button color="accent" class="mb-1" routerLink="/ngclassShop">NgClass</button>
+      <button mat-raised-button color="accent" class="mb-1" routerLink="/material">Material Shop</button>
+    </div>
+
+
+    </div>
+
+  <div class="col-10">
     <router-outlet></router-outlet>
-  </mat-grid-tile>
-</mat-grid-list>
+  </div>
+
+</div>
 
 
 
