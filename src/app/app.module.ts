@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -13,6 +14,7 @@ import { NgrxShopComponent } from './ngrx-shop/ngrx-shop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgClassShopComponent } from './ng-class-shop/ng-class-shop.component';
 import { MaterialShopComponent } from './material-shop/material-shop.component';
+import { FormShopComponent } from './form-shop/form-shop.component';
 
 
 @NgModule({
@@ -21,10 +23,13 @@ import { MaterialShopComponent } from './material-shop/material-shop.component';
     HomePageComponent,
     NgrxShopComponent,
     NgClassShopComponent,
-    MaterialShopComponent
+    MaterialShopComponent,
+    FormShopComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
