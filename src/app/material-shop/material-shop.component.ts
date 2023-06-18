@@ -45,4 +45,16 @@ export class MaterialShopComponent implements OnInit {
 
   }
 
+  //function to multiple two input value
+  multiply(a: number, b: number): number {
+    return a * b;
+  }
+
+  //draw a circle
+  drawCircle(radius: number): number {
+    return Math.PI * radius * radius;
+  }
+
+
+
 }

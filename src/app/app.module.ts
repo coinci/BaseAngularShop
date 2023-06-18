@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgClassShopComponent } from './ng-class-shop/ng-class-shop.component';
 import { MaterialShopComponent } from './material-shop/material-shop.component';
 import { FormShopComponent } from './form-shop/form-shop.component';
+import { FormBasicShopComponent } from './form-basic-shop/form-basic-shop.component';
+import { FormShopActualComponent } from './form-shop-actual/form-shop-actual.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { FormShopComponent } from './form-shop/form-shop.component';
     NgrxShopComponent,
     NgClassShopComponent,
     MaterialShopComponent,
-    FormShopComponent
+    FormShopComponent,
+    FormBasicShopComponent,
+    FormShopActualComponent
   ],
   imports: [
     BrowserModule,
