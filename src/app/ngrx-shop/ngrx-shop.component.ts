@@ -24,8 +24,8 @@ export class NgrxShopComponent implements OnInit {
   // the main entry
   runTest(): void {
     // this.tryMergeMap();
-    // this.trySubject();
-    this.tryTap_2();
+    this.trySubject();
+   // this.tryTap_2();
   }
 
   try1(): void {
