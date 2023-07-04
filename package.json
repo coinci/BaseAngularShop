@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "liteServer": "lite-server --baseDir=dist/base-angular-shop"
+    "liteServer": "lite-server --baseDir=dist/base-angular-shop",
+    "playground": "angular-playground"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "axios": "^1.4.0",
     "bootstrap": "^5.1.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
@@ -33,6 +35,7 @@
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "angular-cli-ghpages": "^1.0.6",
+    "angular-playground": "^9.0.1",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
