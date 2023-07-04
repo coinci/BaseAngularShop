@@ -1,7 +1,7 @@
-import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { UntypedFormControl, UntypedFormGroup, Validators } from "@angular/forms";
 import { LimitValidator } from "./limit.formvalidator";
 
-export class ProductFormControl extends FormControl {
+export class ProductFormControl extends UntypedFormControl {
     label: string;
     modelProperty: string;
 
@@ -44,7 +44,7 @@ export class ProductFormControl extends FormControl {
     }
 }
 
-export class ProductFormGroup extends FormGroup {
+export class ProductFormGroup extends UntypedFormGroup {
 
     constructor() {
         super({ name: new ProductFormControl("Name", "name", "", Validators.required)});

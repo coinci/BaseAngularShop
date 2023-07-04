@@ -1,11 +1,11 @@
-import { FormControl } from "@angular/forms";
+import { UntypedFormControl } from "@angular/forms";
 
 export class LimitValidator {
 
     static Limit(limit:number) {
-        return (control:FormControl) : {[key: string]: any} => {
+        return (control:UntypedFormControl) : {[key: string]: any} => {
             let val = Number(control.value);
-            if (val != NaN && val > limit) {
+            if ( val > limit) {
                 return {"limit": {"limit": limit, "actualValue": val}};
             } else {
                 return null as any;
