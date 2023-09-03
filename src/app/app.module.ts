@@ -17,6 +17,7 @@ import { MaterialShopComponent } from './material-shop/material-shop.component';
 import { FormShopComponent } from './form-shop/form-shop.component';
 import { FormBasicShopComponent } from './form-basic-shop/form-basic-shop.component';
 import { FormShopActualComponent } from './form-shop-actual/form-shop-actual.component';
+import { GraphShopComponent } from './graph-shop/graph-shop.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FormShopActualComponent } from './form-shop-actual/form-shop-actual.com
     MaterialShopComponent,
     FormShopComponent,
     FormBasicShopComponent,
-    FormShopActualComponent
+    FormShopActualComponent,
+    GraphShopComponent
   ],
   imports: [
     BrowserModule,

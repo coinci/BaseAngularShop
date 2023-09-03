@@ -6,6 +6,7 @@ import { MaterialShopComponent } from './material-shop/material-shop.component';
 import { NgClassShopComponent } from './ng-class-shop/ng-class-shop.component';
 import { NgrxShopComponent } from './ngrx-shop/ngrx-shop.component';
 import { FormBasicShopComponent } from './form-basic-shop/form-basic-shop.component';
+import { GraphShopComponent } from './graph-shop/graph-shop.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'material', component: MaterialShopComponent},
   { path: 'form', component: FormShopComponent},
   { path: 'formbasic', component: FormBasicShopComponent},
+  { path: 'graphQL', component: GraphShopComponent},
 ];
 
 @NgModule({
