@@ -18,6 +18,7 @@ import { FormShopComponent } from './form-shop/form-shop.component';
 import { FormBasicShopComponent } from './form-basic-shop/form-basic-shop.component';
 import { FormShopActualComponent } from './form-shop-actual/form-shop-actual.component';
 import { GraphShopComponent } from './graph-shop/graph-shop.component';
+import { NgrxPracticeComponent } from './ngrx-practice/ngrx-practice.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { GraphShopComponent } from './graph-shop/graph-shop.component';
     FormShopComponent,
     FormBasicShopComponent,
     FormShopActualComponent,
-    GraphShopComponent
+    GraphShopComponent,
+    NgrxPracticeComponent
   ],
   imports: [
     BrowserModule,
