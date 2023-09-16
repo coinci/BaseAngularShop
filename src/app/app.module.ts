@@ -15,6 +15,15 @@ import { FormShopActualComponent } from './form-shop-actual/form-shop-actual.com
 import { GraphShopComponent } from './graph-shop/graph-shop.component';
 import { NgrxPracticeComponent } from './ngrx-practice/ngrx-practice.component';
 
+import {MatButtonModule} from '@angular/material/button';
+
+import { HttpClientModule } from '@angular/common/http';
+import { booksReducer } from '../book-state/books.reducer';
+import { collectionReducer } from '../book-state/collection.reducer';
+import { StoreModule } from '@ngrx/store';
+import { BookCollectionComponent } from './book-collection/book-collection.component';
+import { BookListComponent } from './book-list/book-list.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +36,9 @@ import { NgrxPracticeComponent } from './ngrx-practice/ngrx-practice.component';
     FormBasicShopComponent,
     FormShopActualComponent,
     GraphShopComponent,
-    NgrxPracticeComponent
+    NgrxPracticeComponent,
+    BookCollectionComponent,
+    BookListComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +46,9 @@ import { NgrxPracticeComponent } from './ngrx-practice/ngrx-practice.component';
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    StoreModule.forRoot({ books: booksReducer, collection: collectionReducer }),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
