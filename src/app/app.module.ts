@@ -23,6 +23,7 @@ import { collectionReducer } from '../book-state/collection.reducer';
 import { StoreModule } from '@ngrx/store';
 import { BookCollectionComponent } from './book-collection/book-collection.component';
 import { BookListComponent } from './book-list/book-list.component';
+import { CssShopComponent } from './css-shop/css-shop.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { BookListComponent } from './book-list/book-list.component';
     GraphShopComponent,
     NgrxPracticeComponent,
     BookCollectionComponent,
-    BookListComponent
+    BookListComponent,
+    CssShopComponent
   ],
   imports: [
     BrowserModule,

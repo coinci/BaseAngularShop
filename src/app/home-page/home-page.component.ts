@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
+  msg: string='';
 
   constructor() { }
 
   ngOnInit(): void {
-    this.checkAction();
+    // this.checkAction();
+    this.doAdd(10,20);
   }
 
   checkAction() {
@@ -23,5 +25,11 @@ export class HomePageComponent implements OnInit {
     console.log(`t1 is ${t1}, after ... is `);
     console.dir(t1_ex);
   }
+
+  doAdd(num1: number, num2: number) {
+ this.msg = `argument number is ${arguments.length.toString()}`;
+    return num1+ num2;
+  }
+  
 
 }
