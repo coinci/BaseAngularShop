@@ -4,10 +4,10 @@ import { of, map, mergeMap, interval, Subscription, Subject, tap, concatMap, tak
 
 @Component({
   selector: 'app-ngrx-shop',
-  templateUrl: './ngrx-shop.component.html',
-  styleUrls: ['./ngrx-shop.component.scss']
+  templateUrl: './Rxjs-shop.component.html',
+  styleUrls: ['./Rxjs-shop.component.scss']
 })
-export class NgrxShopComponent implements OnInit {
+export class RxjsShopComponent implements OnInit {
   subscriber?: Subscription;
 
   constructor() { }
@@ -23,8 +23,8 @@ export class NgrxShopComponent implements OnInit {
 
   // the main entry
   runTest(): void {
-    // this.tryMergeMap();
-    this.trySubject();
+    this.tryMergeMap();
+    // this.trySubject();
    // this.tryTap_2();
   }
 
@@ -55,12 +55,12 @@ export class NgrxShopComponent implements OnInit {
       subject.subscribe(v => console.log("stream 3", v));
     }, 1000);
     // 产生数据1
-    subject.next(1);
+    subject.next('next 1');
     // 产生数据2
-    subject.next(2);
+    subject.next('next 2');
     // 延时3s产生数据3
     setTimeout(() => {
-      subject.next(3);
+      subject.next('next 3');
     }, 3000);
   }
 

@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { NgrxShopComponent } from './ngrx-shop/ngrx-shop.component';
+import { RxjsShopComponent } from './Rxjs-shop/Rxjs-shop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgClassShopComponent } from './ng-class-shop/ng-class-shop.component';
 import { MaterialShopComponent } from './material-shop/material-shop.component';
@@ -30,7 +30,7 @@ import { CssShopComponent } from './css-shop/css-shop.component';
   declarations: [
     AppComponent,
     HomePageComponent,
-    NgrxShopComponent,
+    RxjsShopComponent,
     NgClassShopComponent,
     MaterialShopComponent,
     FormShopComponent,

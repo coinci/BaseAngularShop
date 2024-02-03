@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgrxShopComponent } from './ngrx-shop.component';
+import { RxjsShopComponent } from './Rxjs-shop.component';
 
 describe('NgrxShopComponent', () => {
-  let component: NgrxShopComponent;
-  let fixture: ComponentFixture<NgrxShopComponent>;
+  let component: RxjsShopComponent;
+  let fixture: ComponentFixture<RxjsShopComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgrxShopComponent ]
+      declarations: [ RxjsShopComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgrxShopComponent);
+    fixture = TestBed.createComponent(RxjsShopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
