@@ -24,6 +24,7 @@ import { StoreModule } from '@ngrx/store';
 import { BookCollectionComponent } from './book-collection/book-collection.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { CssShopComponent } from './css-shop/css-shop.component';
+import { LrcShopComponent } from './lrc-shop/lrc-shop.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { CssShopComponent } from './css-shop/css-shop.component';
     NgrxPracticeComponent,
     BookCollectionComponent,
     BookListComponent,
-    CssShopComponent
+    CssShopComponent,
+    LrcShopComponent
   ],
   imports: [
     BrowserModule,

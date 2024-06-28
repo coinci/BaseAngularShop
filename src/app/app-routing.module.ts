@@ -9,18 +9,20 @@ import { FormBasicShopComponent } from './form-basic-shop/form-basic-shop.compon
 import { GraphShopComponent } from './graph-shop/graph-shop.component';
 import { NgrxPracticeComponent } from './ngrx-practice/ngrx-practice.component';
 import { CssShopComponent } from './css-shop/css-shop.component';
+import { LrcShopComponent } from './lrc-shop/lrc-shop.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent},
-  { path: 'home', component: HomePageComponent},
-  { path: 'ngrx', component: RxjsShopComponent},
-  { path: 'ngclassShop', component: NgClassShopComponent},
-  { path: 'material', component: MaterialShopComponent},
-  { path: 'form', component: FormShopComponent},
-  { path: 'formbasic', component: FormBasicShopComponent},
-  { path: 'graphQL', component: GraphShopComponent},
-  { path: 'ngrx2', component: NgrxPracticeComponent},
-  { path: 'css', component: CssShopComponent},
+  { path: '', component: HomePageComponent },
+  { path: 'home', component: HomePageComponent },
+  { path: 'ngrx', component: RxjsShopComponent },
+  { path: 'ngclassShop', component: NgClassShopComponent },
+  { path: 'material', component: MaterialShopComponent },
+  { path: 'form', component: FormShopComponent },
+  { path: 'formbasic', component: FormBasicShopComponent },
+  { path: 'graphQL', component: GraphShopComponent },
+  { path: 'ngrx2', component: NgrxPracticeComponent },
+  { path: 'css', component: CssShopComponent },
+  { path: 'lrc', component: LrcShopComponent },
 ];
 
 @NgModule({
